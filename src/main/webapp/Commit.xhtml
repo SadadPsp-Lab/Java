@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form prependId="false">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h:commandButton value="Check Status" action="#{purchase.getStatus}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 21px">
+                        AppStatus:
+                    </td>
+                    <td style="width: 213px; height: 21px">
+                        <h:outputText value="#{purchase.checkStatusResult.appStatus}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 21px">
+                        ResponseCode:
+                    </td>
+                    <td style="width: 213px; height: 21px">
+                        <h:outputText value="#{purchase.checkStatusResult.responseCode}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 21px">
+                        RefNo:
+                    </td>
+                    <td style="width: 213px; height: 21px">
+                        <h:outputText value="#{purchase.checkStatusResult.refrenceNumber}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 21px">
+                        appStatusDescription:
+                    </td>
+                    <td style="width: 213px; height: 21px">
+                        <h:outputText value="#{purchase.checkStatusResult.appStatusDescription}"/>
+                    </td>
+                </tr>
+            </table>
+        </h:form>
+    </h:body>
+</html>
+

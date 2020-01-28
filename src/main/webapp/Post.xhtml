@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Send </title>
+    </h:head>
+    <h:body>
+        <h1>Prepare purchase request</h1>
+            <table>
+                <tr>
+                    <td style="width: 188px; height: 26px">
+                        Merchant ID:
+                    </td>
+                    <td style="width: 487px; height: 26px">
+                        <h:outputText id="MerchantId" value="#{purchase.merchantId}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px">
+                        Terminal ID:
+                    </td>
+                    <td style="width: 487px; height: 26px">
+                        <h:outputText id="TerminalId" value="#{purchase.terminalId}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px;">
+                        Order Id:
+                    </td>
+                    <td style="width: 487px; height: 26px;">
+                        <h:outputText id="OrderId" value="#{purchase.orderId}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px">
+                        Amount:
+                    </td>
+                    <td style="width: 487px">
+                        <h:outputText id="Amount" value="#{purchase.amount}" />                
+                    </td>
+                </tr>
+            </table>        
+        <h:outputText escape="false" value="#{purchase.result}"/>
+        <input type="submit" value="Submit"/>
+    </h:body>
+</html>
+

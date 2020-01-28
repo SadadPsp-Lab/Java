@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>SIC IPG Test</title>
+    </h:head>
+    <h:body>
+        <h1>Prepare purchase request</h1>
+        <h:form prependId="false">
+            <table>
+                <tr>
+                    <td style="width: 188px; height: 26px">
+                        Merchant ID:
+                    </td>
+                    <td style="width: 487px; height: 26px">
+                        <h:inputText id="MerchantId" value="#{purchase.merchantId}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px">
+                        Terminal ID:
+                    </td>
+                    <td style="width: 487px; height: 26px">
+                        <h:inputText id="TerminalId" value="#{purchase.terminalId}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px">
+                        TX Key:
+                    </td>
+                    <td style="width: 487px; height: 26px">
+                        <h:inputSecret id="TransKey" value="xxxxxxxxxx" redisplay="true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px;">
+                        Order Id:
+                    </td>
+                    <td style="width: 487px; height: 26px;">
+                        <h:inputText id="OrderId" value="#{purchase.orderId}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px">
+                        Amount:
+                    </td>
+                    <td style="width: 487px">
+                        <h:inputText id="Amount" value="#{purchase.amount}" />                
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px;">
+                        Return URL:
+                    </td>
+                    <td style="width: 487px; height: 26px;">
+                        <h:inputText id="ReturnURL" value="#{purchase.returnURL}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 188px; height: 26px;">
+                        Service URL:
+                    </td>
+                    <td style="width: 487px; height: 26px;">
+                        <h:inputText id="ServiceURL" value="#{purchase.serviceURL}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 487px; height: 21px" colspan="2">
+                        <h:commandButton id="Submit" value="submit" action="#{purchase.submit}" />
+                    </td>
+                </tr>
+            </table>
+        </h:form>
+    </h:body>
+</html>
+

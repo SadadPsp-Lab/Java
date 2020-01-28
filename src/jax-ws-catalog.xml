@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://bmiutility.bmi.ir/?wsdl" uri="wsdl/bmiutility.bmi.ir/.wsdl"/>
+    <system systemId="file:/D:/MerchantUtility-RPC.wsdl" uri="wsdl/MerchantUtility-RPC.wsdl"/>
+    <system systemId="https://bmiutility.bmi.ir/merchantutility.asmx" uri="wsdl/bmiutility.bmi.ir/merchantutility.asmx"/>
+    <system systemId="https://bmiutility.bmi.ir/merchantutility.asmx?WSDL" uri="wsdl/bmiutility.bmi.ir/merchantutility.asmx.wsdl"/>
+</catalog>
